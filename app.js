@@ -27,6 +27,9 @@ var delete_all_todo_btn = document.getElementById("delete_all_todo_btn");
 var todo_list = document.getElementById("todo_list");   
 
 add_todo_btn.addEventListener('click' , function() {
+
+
+    // ---------11:46-------
     
 })
 
