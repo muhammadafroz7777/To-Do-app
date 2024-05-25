@@ -40,11 +40,12 @@ if (!todo_input.value) return alert('Tdo main kuch daaldo')
 })
 
 function edit(element) {
-    console.log("edit =>" , element.parentElement)
+    console.log("edit =>" , element.previousElementSibling.innerText);
+    var previousValue = 
 }
 
 function deleteFun(element) {
     
     element.parentElement.remove();
-    // ---------25:01--------
+    
 }
