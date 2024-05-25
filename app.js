@@ -46,4 +46,5 @@ function edit(element) {
 function deleteFun(element) {
     
     element.parentElement.remove();
+    // ---------25:01--------
 }
