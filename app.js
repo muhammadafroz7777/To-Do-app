@@ -28,8 +28,22 @@ var todo_list = document.getElementById("todo_list");
 
 add_todo_btn.addEventListener('click' , function() {
 
+if (!todo_input.value) return alert('Tdo main kuch daaldo') 
+    
 
-    // ---------11:46-------
+    var list_item = `<li><span>${todo_input.value}</span><button onclick="edit(this)">Edit</button><button onclick="deleteFun(this)">del</button></li>`
+
+    todo_list.innerHTML += list_item;
+    todo_input.value = '';
+   
     
 })
 
+function edit(element) {
+    console.log("edit =>" , element.parentElement)
+}
+
+function deleteFun(element) {
+    
+    element.parentElement.remove();
+}
