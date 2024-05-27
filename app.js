@@ -23,7 +23,7 @@
 
 var todo_input = document.getElementById("todo_input");   
 var add_todo_btn = document.getElementById("add_todo_btn");   
-// var delete_all_todo_btn = document.getElementById("delete_all_todo_btn");   
+var delete_all_todo_btn = document.getElementById("delete_all_todo_btn");   
 var todo_list = document.getElementById("todo_list");   
 
 add_todo_btn.addEventListener('click' , function() {
@@ -50,6 +50,11 @@ function deleteFun(element) {
 
     
     element.parentElement.remove();
+    
+}
+function deleteAll() {
+
+   document.getElementById("todo_list").innerHTML =''
     
 }
 
